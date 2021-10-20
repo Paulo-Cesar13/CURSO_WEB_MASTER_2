@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IM Fell English SC', serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    max-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../IMAGEM/capa.png');
+}
+
+.clear{
+    clear: both;
+}
+
+.conteiner{
+    width: 1500px;
+    height: 50px;
+    padding: 25px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header nav{
+    float: right;
+}
+
+header .logo{
+    float: left;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    float: left;
+}
+
+header li a {
+    text-decoration: none;
+    margin: 5px;
+    color:white;
+}
+
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 150px;
+}
+
+.chamada1 h2{
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+section.cect-1{
+    width: 100%;
+    height: 300px;
+    background-color: #472562;
+    padding: 20px 2%;
+}
+
+.text-cect-1{
+    float: left;
+    color: white;
+}
+
+.text-cect-1 h2{
+    font-weight: 300;
+}
+
+.text-cect-1 p{
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.text-cect-1 ul{
+    font-size: 13px;
+    list-style-position: inside;
+}
+
+.text-cect-1 ul li{
+    float: left;
+    width: 100%;
+}
+
+.btn-1-text{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 40px;
+}
+
+.device-cect-1{
+    float: left;
+    width: 50%;
+    height: 300px;
+    background-image: url('#');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}

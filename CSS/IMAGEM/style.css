@@ -81,34 +81,41 @@ header li a {
 
 section.cect-1{
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: #472562;
     padding: 20px 2%;
 }
 
 .text-cect-1{
     float: left;
+    width: 50%;
+    position: relative;
+    left: 45px;
+    margin-top: 60px;
+    padding-left: 80px;
     color: white;
 }
 
 .text-cect-1 h2{
+    font-size: 26px;
     font-weight: 300;
 }
 
 .text-cect-1 p{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     padding-top: 20px;
 }
 
 .text-cect-1 ul{
-    font-size: 13px;
+    font-size: 15px;
     list-style-position: inside;
 }
 
 .text-cect-1 ul li{
     float: left;
     width: 100%;
+    margin-top: 8px;
 }
 
 .btn-1-text{
@@ -126,8 +133,41 @@ section.cect-1{
 .device-cect-1{
     float: left;
     width: 50%;
-    height: 300px;
+    position: relative;
+    top: -30px;
+    height: 400px;
     background-image: url('#');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 760px) {
+
+    section.cect-1{
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .text-cect-1{
+        margin-top: 0;
+        position: static;
+        float: none;
+    }
+
+    .text-cect-1 ul li{
+        float: none;
+
+    }
+
+    .btn-1-text{
+        display: inline-block;
+    }
+
+    .device-cect-1{
+        display: none;
+    }
+    
 }

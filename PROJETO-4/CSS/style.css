@@ -30,15 +30,42 @@ header.logo img{
     width: 236px;
 }
 
-header nav{
+nav.menu-mobile{
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-image: url('../CSS/imagens/menu-mobile.png');
+    background-size: 100% 100%;
+    display: none;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+
+}
+
+nav.menu-mobile ul li{
+    padding: 10px 0;
+}
+
+header nav.menu-desktop{
     float: right;
 }
 
-header nav ul{
+header nav.menu-desktop ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     float: left;
     padding: 0 20px;
     font-size: 16px;
@@ -119,3 +146,139 @@ section.servicos > .conteiner .box-servico:nth-of-type(3){
 }
 
 /** section serviços **/
+
+/** section perfil-conteiner **/
+
+section.perfil-conteiner .conteiner{
+    padding: 40px 0;
+}
+
+section.perfil-conteiner .conteiner{
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+section.perfil-conteiner .perfil-wraper{
+    padding-top: 50%;
+    position: relative;
+}
+
+section.perfil-conteiner .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.perfil-conteiner .img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url('../CSS/imagens/img_perfil.png');
+    background-size: 100% 100%;
+}
+
+section.perfil-conteiner .texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+section.perfil-conteiner .texto-perfil h2{
+    font-size: 20px;
+    color: #698293;
+    text-align: center;
+}
+
+section.perfil-conteiner .texto-perfil p{
+    font-size: 16px;
+    color: #4b4b4b;
+    margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        display: block;
+    }
+
+    section.servicos .conteiner{
+        flex-direction: column;
+    }
+
+    section.servicos > .conteiner .box-servico:nth-of-type(1){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+    
+    section.servicos > .conteiner .box-servico:nth-of-type(2){
+        width: 95%;
+        max-width: 380px;
+        padding: 50px 2%;
+    }
+    
+    section.servicos > .conteiner .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    section.perfil-conteiner .perfil-wraper{
+        padding-top: 0;
+    }
+
+    section.perfil-conteiner .perfil-wraper2{
+        /*
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        */
+        height: auto;
+        position: static;
+        text-align: center;
+        display: inline-block;
+    }
+
+    section.perfil-conteiner .img-perfil{
+        width: 80%;
+        padding-top: 100%;
+        display: inline-block;
+        height: auto;
+        /*
+        background-image: url('../CSS/imagens/dentista.png');
+        */
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    section.perfil-conteiner .texto-perfil{
+        display: inline-block;
+        width: 90%;
+        padding: 0 30px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header .logo img{
+        width: 170px;
+    }
+}
+/*
+@media screen and (max-width: 480px) {
+    header .logo img{
+        width: 170px;
+    }
+}
+*/

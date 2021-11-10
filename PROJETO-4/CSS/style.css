@@ -197,6 +197,16 @@ section.perfil-conteiner .texto-perfil p{
     color: #4b4b4b;
     margin-top: 8px;
 }
+
+/** section perfil-conteiner **/
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    background-color: green;
+    padding-top: calc(33.3% * 0.6);
+}
+/** section perfil-conteiner **/
 @media screen and (max-width: 768px) {
     nav.menu-desktop{
         display: none;

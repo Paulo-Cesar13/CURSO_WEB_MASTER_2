@@ -247,7 +247,7 @@ section.tratamentos > .conteiner{
 
 .tratamento-single{
     padding: 20px;
-    background-color: #bac6cf;
+    background-color: rgb(230, 230, 230);
 }
 
 .tratamento-single h2{
@@ -358,6 +358,7 @@ section.depoimentos > h2{
 /** section contato **/
 
 section.contato{
+    background: rgb(230, 230, 230);
     padding: 60px 2%;
 }
 

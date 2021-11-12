@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header {
+    margin: 30px 2%;
+}
+
+header div.logo{
+    float: left;
+}
+/*
+header nav.desktop{
+    float: right;
+}

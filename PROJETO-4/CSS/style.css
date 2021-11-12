@@ -247,6 +247,7 @@ section.tratamentos > .conteiner{
 
 .tratamento-single{
     padding: 20px;
+    background-color: #bac6cf;
 }
 
 .tratamento-single h2{
@@ -257,7 +258,7 @@ section.tratamentos > .conteiner{
 .tratamento-single p{
     font-size: 13px;
     padding: 10px 0;
-    color: #b4b4b4;
+    color: #7e7a7a;
 }
 
 /** section tratamentos **/
@@ -305,7 +306,183 @@ section.depoimentos > h2{
     color: #698293;
 }
 
-/** setion Depoimentos **/
+/** section Depoimentos **/
+
+/** section social **/
+
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 49px 0;
+    background: #98a5ae;
+}
+
+.instagram-chamada p{
+    line-height: 20px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+}
+
+.img-mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blue;
+    border: 6px solid white;
+}
+
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 49px 0;
+    background: #576975;
+}
+
+.facebook-chamada p{
+    line-height: 20px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+/** section social **/
+
+/** section contato **/
+
+section.contato{
+    padding: 60px 2%;
+}
+
+section.contato > h2{
+    font-size: 20px;
+    text-align: center;
+    color: #698293;
+}
+
+section.contato > form{
+    width: 100%;
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.form-wraper{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper input[type=email]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper input[type=tel]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper textarea{
+    width: 100%;
+    margin-top: 8px;
+    padding: 15px;
+    height: 121px;
+    resize: none;
+    border: 1px solid #dadada;
+}
+
+.form-wraper input[type=submit]{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    background: #688293;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/** section contato **/
+
+/** footer **/
+
+footer{
+    padding: 40px 2%;
+    background-color: #87b7cf;
+}
+
+.conteiner{
+    max-width: 1100px;
+}
+
+footer .footer-block{
+    float: left;
+    width: 33.3%;
+}
+
+.footer-block h2{
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.footer-block p{
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+/** footer **/
+
+@media screen and (max-width: 1024px){
+    .img-mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+        background-color: blue;
+    }
+
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
     nav.menu-desktop{
@@ -398,6 +575,26 @@ section.depoimentos > h2{
         width: 100%;
         height: 100%;
     }
+
+    .img-mosaico-single-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+        background-color: blue;
+    }
+
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer .footer-block{
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -412,6 +609,25 @@ section.depoimentos > h2{
         border: 5px solid white;
         padding-top: calc(100% * 0.6);
     }
+
+    .w50{
+        width: 100%;
+    }
+
+    /**
+
+    .img-mosaico-single-social{
+        max-height: 90px;
+        width: 100%;
+        padding-top: 100%;
+        background-color: blue;
+    }
+
+    .mosaico-social > div:nth-of-type(1n+2){
+        display: none;
+    }
+
+    **/
 }
 /*
 @media screen and (max-width: 480px) {

@@ -7,6 +7,7 @@ font-family: 'Montserrat', sans-serif;
 
 html,body{
     height: 100%;
+    background-color: #fbc8d4;
 }
 
 /** header **/
@@ -89,7 +90,7 @@ header ul a{
     width: 100%;
     padding-top: 100%;
     background-color: red;
-    border: 5px solid white;
+    border: 5px solid #fbc8d4;
 }
 
 /** section mosaico **/
@@ -210,7 +211,7 @@ section.videos .box-video{
     float: left;
     width: 33.3%;
     position: relative;
-    border: 5px solid white;
+    border: 5px solid #fbc8d4;
     padding-top: calc(33.3% * 0.6);
 }
 
@@ -247,7 +248,7 @@ section.tratamentos > .conteiner{
 
 .tratamento-single{
     padding: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: #fbc8d4;
 }
 
 .tratamento-single h2{
@@ -335,7 +336,7 @@ section.depoimentos > h2{
     width: calc(100% / 9);
     padding-top: calc(100% / 9);
     background-color: blue;
-    border: 6px solid white;
+    border: 6px solid #fbc8d4;
 }
 
 .facebook-chamada{

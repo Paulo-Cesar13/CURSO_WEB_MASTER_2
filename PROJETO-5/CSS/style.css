@@ -146,15 +146,6 @@ section.banner{
 
 /** section veiculos em Destaque **/
 
-section.veiculos-destaques{
-    padding: 20px 2%;
-}
-
-section.veiculos-destaques .conteiner{
-    max-width: 1000px;
-    padding: 40px 0;
-}
-
 .aline-titulo{
     max-width: 1400px;
     margin: 0 auto;
@@ -170,7 +161,7 @@ section.veiculos-destaques .conteiner{
     background: black;
 }
 
-section.veiculos-destaques .aline-titulo h2{
+.aline-titulo h2{
     position: relative;
     background: white;
     display: inline-block;
@@ -179,6 +170,15 @@ section.veiculos-destaques .aline-titulo h2{
     padding: 0 20px;
     font-style: italic;
     text-transform: uppercase;
+}
+
+section.veiculos-destaques{
+    padding: 20px 2%;
+}
+
+section.veiculos-destaques .conteiner{
+    max-width: 1000px;
+    padding: 40px 0;
 }
 
 .vitrine-destaque{
@@ -209,62 +209,112 @@ section.veiculos-destaques .aline-titulo h2{
 }
 
 .btn1{
-    width: 250px;
-    text-align: center;
-    text-decoration: none;
     display: block;
-    line-height: 40px;
-    font-size: 16px;
+    width: 95%;
+    height: 40px;
     font-style: italic;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
     color: white;
-    border: 5px solide #b21e1e;
-    border-radius: 20px;
+    border: 2px solid #b21e1e;
+    border-radius: 15px;
     background-color: #eb2d2d;
 }
 
 .vitrine-destaque a{
+    margin-top: 12px;
     margin-left: 8px;
-    margin-top: 10px;
 }
 
 /** section veiculos em Destaque **/
 
 /** Serviços e Descrição **/
 
+section.servicos-descricao{
+    display: flex;
+}
+
 .half1{
-    float: left;
     width: 50%;
     padding: 90px 0;
+    text-align: right;
+    color: #ffffff;
     background: #242424;
-    color: white;
-}
+ }
 
-.half1-wraper{
-    display: inline-block;
-    text-align:left;
-    padding: 90px 98px;
-}
+ .half1-wraper{
+     display: inline-block;
+     padding-right: 50px;
+     text-align: left;
+ }
 
-.half1-wraper h2{
-    font-weight: normal;
-    font-size: 30px;
+ .half1-wraper h2{
+     font-size: 32px;
+     font-style: italic;
+     font-weight: normal;
+ }
+
+ .half1-wraper ul{
+     display: inline-block;
+     margin-top: 20px;
+ }
+
+ .half1-wraper li{
+     margin-left: 15px;
+ }
+
+ .half1-wraper a{
+     display: inline-block;
+     margin-left: 20px;
+     margin-top: 10px;
+     width: 300px;
+     vertical-align: bottom;
+ }
+
+ .half2{
+    width: 50%;
+    padding: 90px 100px;
+    color: #ffffff;
+    background: #eb2d2d;
+ }
+
+ .half2 h2{
+    font-size: 32px;
     font-style: italic;
+    font-weight: normal;
 }
 
-.half1-wraper ul{
-    display: inline-block;
+.half2 .depoimento-single{
     margin-top: 20px;
 }
 
-.half1-wraper li{
-    margin-left: 15px;
+.depoimento-single p{
+    text-align: justify;
+    font-size: 19px;
 }
 
-.half1-wraper a{
-    display: inline-block;
-    margin-top: 10px;
-    
+.navigation{
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.nome-depoimento{
+    float: right;
+    font-size: 23px;
+    color: #252525;
 }
 
 /** Serviços e Descrição **/
@@ -274,6 +324,16 @@ section.veiculos-destaques .aline-titulo h2{
     section.banner{
        background-size: 90% auto;
        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 150px;
+        vertical-align: bottom;
     }
 }
 
@@ -287,7 +347,7 @@ section.veiculos-destaques .aline-titulo h2{
     }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 768px){
     nav.menu-desktop{
         display: none;
     }
@@ -296,36 +356,7 @@ section.veiculos-destaques .aline-titulo h2{
         display: block;
         
     }
-}
 
-section.veiculos-destaques .conteiner{
-    text-align: center;
-}
-
-.vitrine-destaque{
-    display: inline-block;
-    margin: 5px;
-    margin-top: 20px;
-    float: none;
-    width: 60%;
-}
-
-/**
-
-.half1{
-    float: mome;
-    width: 50%;
-    padding: 45px 0;
-}
-**/
-
-.half1-wraper{
-    display: inline-block;
-    text-align:left;
-    padding: 45px 49px;
-}
-
-@media screen and (max-width: 580px){
     .text-banner{
         padding: 30px;
     }
@@ -334,30 +365,49 @@ section.veiculos-destaques .conteiner{
         font-size: 18px;
     }
 
-    section.veiculos-destaques .conteiner{
-        text-align: center;
+    section.servicos-descricao{
+        flex-direction: column;
     }
 
-    .vitrine-destaque{
-        display: inline-block;
-        margin: 5px;
-        margin-top: 20px;
-        float: none;
-        width: 80%;
+    .half1{
+        text-align: left;
     }
-    .vitrine-destaque a{ 
-        display: inline-block;
-        width: 100%;   
+
+    .half1,.half2{
+        padding: 80px 8%;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 500px){
+
+
+@media screen and (max-width: 580px){
+    section.veiculos-destaques .conteiner{
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    section.veiculos-destaques .aline-titulo h2{
+        font-size: 23px;
+    }
+
     .vitrine-destaque{
+        display: inline-block;
+        float: none;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .vitrine-destaque a{
+        display: inline-block;
         width: 100%;
     }
 
-    .vitrine-destaque a{ 
-        display: inline-block;
-        width: 90%;   
-    }
+}
+
+@media screen and (max-width: 501px){
+  .vitrine-destaque{
+      width: 100%;
+  }
 }

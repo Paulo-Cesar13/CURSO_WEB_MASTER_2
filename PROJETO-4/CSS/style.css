@@ -486,6 +486,16 @@ footer .footer-block{
 
 }
 
+@media screen and (max-width: 950px){
+    footer.conteiner nav{
+        width: 80%;
+    }
+    
+    footer.conteiner p strong{
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav.menu-desktop{
         display: none;

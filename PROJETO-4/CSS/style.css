@@ -473,6 +473,7 @@ footer .footer-block{
 
 /** footer **/
 
+
 @media screen and (max-width: 1024px){
     .img-mosaico-single-social{
         width: calc(100% / 6);
@@ -490,7 +491,7 @@ footer .footer-block{
     footer.conteiner nav{
         width: 80%;
     }
-    
+
     footer.conteiner p strong{
         width: 80%;
     }

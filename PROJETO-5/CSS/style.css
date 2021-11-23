@@ -419,6 +419,147 @@ footer strong{
 
 /** footer footer **/
 
+/** pagina venda **/
+
+/** section venda **/
+
+section.venda{
+    padding: 90px;
+    min-height: 80%;
+}
+
+.content-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+}
+
+.search1{
+    width: 90%;
+}
+
+.search1 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+.search1 .barra-preco{
+    position: relative;
+    width: 90%;
+    height: 20px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: white;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    width: 30%;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(200, 200, 200));
+}
+
+.pointer-barra{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: calc(30% - 13px);
+    top: -2.7px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(180, 180, 180));
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa{
+    font-size: 15px;
+    color: black;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 40px;
+}
+
+.search2 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+    display: none;
+}
+
+.form-venda-wraper label{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circulo{
+    display: block;
+}
+
+.circulo{
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: black;
+
+}
+
+.form-venda-wraper span{
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+.vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
+}
+
+/** section venda **/
+
+/** pagina venda **/
+
 @media screen and (max-width: 1400px){
 
     section.banner{
@@ -458,7 +599,31 @@ footer strong{
 
     footer p{
         display: block;
+        font-size: 10px;
         float: none;
+        text-align: center;
+    }
+
+    footer strong{
+        font-size: 15px;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        width: 100%;
         text-align: center;
     }
 
@@ -498,6 +663,7 @@ footer strong{
     .w50{
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 580px){
@@ -514,7 +680,7 @@ footer strong{
     .vitrine-destaque{
         display: inline-block;
         float: none;
-        width: 80%;
+        width: 100%;
         margin-top: 20px;
     }
 

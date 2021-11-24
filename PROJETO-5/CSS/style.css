@@ -560,6 +560,77 @@ section.venda{
 
 /** pagina venda **/
 
+/** pagina venda-single **/
+
+section.venda-single{
+    padding-top: 60px;
+}
+
+section.venda-single .conteiner .aline-titulo{
+    width: 80%;
+}
+
+section.venda-single{
+    padding: 0 2%;
+}
+
+section.venda-single .conteiner {
+    max-width: 1280px;
+    padding: 40px 0;
+}
+
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+
+.foto-destaque{
+    width: 80%;
+    padding-top: 80%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding-top: 130px;
+}
+
+.descricao-veiculo p{
+    margin-top: 25px;
+    max-width: 360px;
+    text-align: justify;
+}
+
+.descricao-veiculo a{
+    margin-top: 25px;
+    max-width: 360px;
+}
+
+.nav-galeria{
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.nav-galeria-wraper{
+    width: 200%;
+}
+
+.mini-img{
+    float: left;
+    width: calc(33.3% * (100 / 200));
+    padding-top: calc(33.3% * (100 /200) * 0.4);
+    border: 8px solid white;
+    background-size: cover;
+    background-position: center;
+}
+
+/** pagina venda-single **/
+
 @media screen and (max-width: 1400px){
 
     section.banner{

@@ -614,6 +614,7 @@ section.venda-single .conteiner {
     margin-top: 15px;
     padding-top: 15px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .nav-galeria-wraper{
@@ -631,6 +632,26 @@ section.venda-single .conteiner {
 
 /** pagina venda-single **/
 
+/** pagina sobre **/
+
+section.sobre{
+    max-width: 1280px;
+    min-height: 90%;
+    padding: 60px 2%;
+}
+
+section.conteiner{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+section.sobre .img-destaque-sobre{
+    width: 90%;
+    padding-top: 60%;
+    background-color: rgb(220, 220, 220);
+}
+
+/** pagina sobre **/
 @media screen and (max-width: 1400px){
 
     section.banner{

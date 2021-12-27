@@ -635,20 +635,56 @@ section.venda-single .conteiner {
 /** pagina sobre **/
 
 section.sobre{
-    max-width: 1280px;
     min-height: 90%;
-    padding: 60px 2%;
+    padding: 60px 2% 20px 2%;
 }
 
-section.conteiner{
-    display: inline-block;
+section.sobre .conteiner{
+    max-width: 840px;
     margin-top: 30px;
 }
 
 section.sobre .img-destaque-sobre{
-    width: 90%;
+    width: 100%;
     padding-top: 60%;
     background-color: rgb(220, 220, 220);
+}
+
+section.sobre .descricao-autor{
+    margin-top: 20px;
+}
+
+.descricao-autor h2{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.descricao-autor p{
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.descricao-autor2{
+    margin-top: 40px;
+}
+
+.img-small{
+    width: 20%;
+    padding-top: 20%;
+    float: left;
+    background-image: url('');
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: rgb(200, 200, 200);
+}
+
+.descricao-autor2 p{
+    float: left;
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    line-height: 30px;
 }
 
 /** pagina sobre **/
@@ -779,6 +815,16 @@ section.sobre .img-destaque-sobre{
     .vitrine-destaque a{
         display: inline-block;
         width: 100%;
+    }
+
+    .img-small{
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .descricao-autor2 p{
+        width: 100%;
+        padding: 20px 0;
     }
 
 }
